@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="BANKGURU" parallel="false">
+	<parameter name="url" value="http://demo.guru99.com/v4/" />
+
+	<test name="RUN ON CHROME">
+		<parameter name="browser" value="chrome" />
+		<parameter name="version" value="2.43" />
+		<classes>
+			<class name="com.bankguru.customer.NewCustomer" />
+			<class name="com.bankguru.customer.EditCustomer" />
+			<class name="com.bankguru.payment.PaymentFunction" />
+		</classes>
+	</test>
+	<!-- <test name="RUN ON FIREFOX"> <parameter name="browser" value="firefox" 
+		/> <classes> <class name="com.bankguru.customer.NewCustomer" /> <class name="com.bankguru.customer.EditCustomer" 
+		/> <class name="com.bankguru.payment.PaymentFunction" /> </classes> </test> 
+		<test name="RUN ON HEADLESS"> <parameter name="browser" value="headless" 
+		/> <classes> <class name="com.bankguru.customer.NewCustomer" /> <class name="com.bankguru.customer.EditCustomer" 
+		/> <class name="com.bankguru.payment.PaymentFunction" /> /> </classes> </test> -->
+</suite>
